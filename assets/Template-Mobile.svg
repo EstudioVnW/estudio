@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153 308">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #fcaf17;
+        stroke-width: 2px;
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_6491" data-name="Group 6491" transform="translate(-937 -4124)">
+    <g id="Rectangle_611" data-name="Rectangle 611" class="cls-1" transform="translate(937 4124)">
+      <rect class="cls-3" width="153" height="308" rx="10"/>
+      <rect class="cls-4" x="1" y="1" width="151" height="306" rx="9"/>
+    </g>
+    <line id="Line_9" data-name="Line 9" class="cls-2" x2="150" transform="translate(938.5 4152.5)"/>
+    <line id="Line_10" data-name="Line 10" class="cls-2" x2="150" transform="translate(938.5 4403.5)"/>
+    <g id="Ellipse_1" data-name="Ellipse 1" class="cls-2" transform="translate(1004 4407)">
+      <circle class="cls-3" cx="10" cy="10" r="10"/>
+      <circle class="cls-4" cx="10" cy="10" r="9"/>
+    </g>
+    <g id="Rectangle_612" data-name="Rectangle 612" class="cls-2" transform="translate(987 4134)">
+      <rect class="cls-3" width="53" height="11" rx="5"/>
+      <rect class="cls-4" x="1" y="1" width="51" height="9" rx="4"/>
+    </g>
+  </g>
+</svg>

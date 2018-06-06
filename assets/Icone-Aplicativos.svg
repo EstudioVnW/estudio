@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.45 92.583">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2, .cls-4 {
+        stroke: #fcaf17;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 3px;
+      }
+
+      .cls-2, .cls-4, .cls-6 {
+        fill: none;
+      }
+
+      .cls-3 {
+        fill: #fcaf17;
+      }
+
+      .cls-4 {
+        stroke-width: 2px;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_6448" data-name="Group 6448" transform="translate(-575.904 -3556)">
+    <g id="Rectangle_611" data-name="Rectangle 611" class="cls-1" transform="translate(575.904 3556)">
+      <rect class="cls-5" width="52.45" height="92.583" rx="9"/>
+      <rect class="cls-6" x="1.5" y="1.5" width="49.45" height="89.583" rx="7.5"/>
+    </g>
+    <line id="Line_9" data-name="Line 9" class="cls-2" x2="51.422" transform="translate(576.637 3570.713)"/>
+    <line id="Line_10" data-name="Line 10" class="cls-2" x2="51.422" transform="translate(576.418 3633.87)"/>
+    <circle id="Ellipse_1" data-name="Ellipse 1" class="cls-3" cx="3.073" cy="3.073" r="3.073" transform="translate(599.377 3637.38)"/>
+    <g id="Rectangle_612" data-name="Rectangle 612" class="cls-4" transform="translate(593.231 3562.693)">
+      <rect class="cls-5" width="18.169" height="3.307" rx="1.653"/>
+      <rect class="cls-6" x="1" y="1" width="16.169" height="1.307" rx="0.653"/>
+    </g>
+  </g>
+</svg>

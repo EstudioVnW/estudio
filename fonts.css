@@ -1,0 +1,31 @@
+@font-face{
+	font-family: SemiboldRegular;
+	src:url(fonts/SourceCodePro-Regular.ttf);
+	font-weight: 400}
+
+@font-face{
+	font-family: Semibold;
+	src:url(fonts/SourceCodePro-Semibold.ttf);
+	font-weight: 400
+}
+
+@font-face{
+	font-family: Bold;
+	src:url(fonts/SourceCodePro-Bold.ttf);
+	font-weight: 700
+}
+@font-face{
+	font-family: ExtraLight;
+	src:url(fonts/SourceCodePro-ExtraLight.ttf);
+	font-weight: 400
+}
+@font-face{
+	font-family: Medium;
+	src:url(fonts/SourceCodePro-Medium.ttf);
+	font-weight: 400
+}
+@font-face{
+	font-family: Light;
+	src:url(fonts/SourceCodePro-Light.ttf);
+	font-weight: 400
+}

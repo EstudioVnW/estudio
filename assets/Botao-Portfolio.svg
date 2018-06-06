@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129.83 67.413">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d5d5d5;
+        stroke: #2e3192;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #2e3192;
+        font-size: 18px;
+        font-family: SourceCodePro-Semibold, Source Code Pro;
+        font-weight: 600;
+        letter-spacing: 0.005em;
+      }
+    </style>
+  </defs>
+  <g id="Group_6456" data-name="Group 6456" transform="translate(-511.67 -587.401)">
+    <rect id="Rectangle_600" data-name="Rectangle 600" class="cls-1" width="127.83" height="65.413" transform="translate(512.67 588.401)"/>
+    <text id="NOSSO_PORTFOLIO" data-name="NOSSO
+PORTFOLIO" class="cls-2" transform="translate(526.508 616.632)"><tspan x="0" y="0">NOSSO</tspan><tspan x="0" y="21">PORTFOLIO</tspan></text>
+  </g>
+</svg>
