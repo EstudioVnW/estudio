@@ -29,3 +29,8 @@
 	src:url(fonts/SourceCodePro-Light.ttf);
 	font-weight: 400
 }
+@font-face{
+	font-family: Black;
+	src:url(fonts/SourceCodePro-Black.ttf);
+	font-weight: 700
+}
