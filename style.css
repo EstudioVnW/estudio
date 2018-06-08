@@ -382,8 +382,69 @@ img{
 }
 .corpo-caixa_8{
 	width: 96.3vw;
-	height: 80vh;
-	padding: 0 0 0 0;
+	height: 80.4vh;
 	margin: 0 -16.3vw;
 	background-color: #00012E;
+}
+.corpo-caixa_8-p{
+	width: 35vw;
+	/*background-color: purple;*/
+	padding: 5% 0 0 20%;
+	font-family: Medium;
+	font-weight: 400;
+	font-size: 0.9em;
+	color: #FCAF17;
+}
+.corpo-caixa_8-p2{
+	width: 35vw;
+	padding: 1% 0 0 20%;
+	font-family: Medium;
+	font-weight: 400;
+	font-size: 0.9em;
+	color: #FCAF17;
+}
+.corpo-caixa_8-p2-parcerias{
+	display: flex;
+	align-items: center;
+	width: 77vw;
+}
+.corpo-caixa_8-p2-parcerias-1{
+	display: flex;
+	flex-direction: column;
+	width: 20vw;
+	/*background-color: grey;*/
+}
+
+.corpo-caixa_8-p2-parcerias-2{
+	display: flex;
+	width: 20vw;
+	height: 10vh;
+	/*background-color: red;*/
+	flex-direction: column;
+}
+.corpo-caixa_8-p2-parcerias-2-span{
+	display: flex;
+	justify-content: space-between;
+	width: 15vw;
+}
+.corpo-caixa_8-p2-parcerias-3{
+	display: flex;
+	flex-direction: column;
+}
+.corpo-caixa_8-pWhite{
+	color: #F5F5F5;
+	text-decoration: underline #fff !important;
+}
+.orpo-caixa_8-p-enviar{
+	text-decoration: underline #FCAF17 !important;	
+	margin-top:6vh;
+}
+.corpo-caixa_8-pbranco{
+	color: #F5F5F5;
+}
+.corpo-caixa_8-pOrange{
+	font-family: Medium
+	font-weight:bold;
+	color: #F26522;
+	margin-top: 6vh;
 }
