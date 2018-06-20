@@ -7,12 +7,12 @@
   document.getElementById("item-menu").addEventListener("click", myFunction2);  
 
   function myFunction() {
-    menuBox.classList.toggle('drop-menu')
-    mobileBar.classList.add('drop-item')
-  }
+    document.getElementById('menu').style.display = "flex";
+    document.getElementById('barra-numerica').style.display = "flex";
+  };
 
   function myFunction2() {
     menuBox.classList.toggle('drop-menu')
     mobileBar.classList.remove('drop-item')
   }
-})(); 
+})();
