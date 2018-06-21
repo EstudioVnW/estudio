@@ -25,6 +25,7 @@ body{
 			width: 100vw;
 			min-height: 100vh;
 			flex-direction: column;
+			border:none;
 		}
 	}
 .corpo-barra_lateral{
@@ -294,7 +295,7 @@ a:link:focus{
 	@media(max-width: 640px){
 		.corpo-botoes{
 			padding: 0;
-			width: 75vw;
+			min-width: 75vw;
 			margin-left: 12%; 
 		}
 	}

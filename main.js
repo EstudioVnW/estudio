@@ -10,9 +10,13 @@
     document.getElementById('menu').style.display = "flex";
     document.getElementById('barra-numerica').style.display = "flex";
   };
+   function myFunction2() {
+    document.getElementById('menu').style.display = "none";
+    document.getElementById('barra-numerica').style.display = "none";
+  };
 
-  function myFunction2() {
-    menuBox.classList.toggle('drop-menu')
-    mobileBar.classList.remove('drop-item')
-  }
+  // function myFunction2() {
+  //   menuBox.classList.toggle('drop-menu')
+  //   mobileBar.classList.remove('drop-item')
+  // }
 })();
