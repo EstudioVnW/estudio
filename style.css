@@ -375,30 +375,31 @@ a:link:focus{
 	align-items: center;
 	justify-content: flex-start;
 }
-	@media(max-width: 768px){
-		.corpo-caixa_1-img{
-			width:  100%;
-		}
+@media(max-width: 768px){
+	.corpo-caixa_1-img{
+		width:  100%;
 	}
+}
 .corpo-caixa_1-sobre_mobile{
 	display: none;
 	background-color: transparent;
 	border: none;
 	font-size: 45px;
 }
-	@media(max-width: 768px){
-		.corpo-caixa_1-sobre_mobile{
-			background-color: transparent;
-    			border: none;
-    			font-size: 45px;
-    			color: #2E3192;
-    			display: block;
-    			padding: 0;
-    			margin:14% 0 5% 10%;
-    			font-size: 2.2em;
+@media(max-width: 768px){
+	.corpo-caixa_1-sobre_mobile{
+		background-color: transparent;
+		border: none;
+		color:#F26522;
+		text-decoration: underline #F26522 !important;
+		font-size: 45px;
+		display: block;
+		padding: 0;
+		margin:14% 0 5% 10%;
+		font-size: 2em;
 
-		}
-	}	
+	}
+}	
 .corpo-caixa_1-p{
 	width: 42vw;
 	padding: 25px 0 25px 0;
@@ -478,12 +479,13 @@ a:link:focus{
 	display: flex;
 	flex-direction: column;
 }
-	@media(max-width: 768px){
-		.corpo-caixa_2-textos{
-			width: 80%;
-			margin: 10% 0% 0% 5%;
-		}
+@media(max-width: 768px){
+	.corpo-caixa_2-textos{
+		min-width: 84%;
+		height: auto;
+		/*margin: 10% 0% 0% 5%;*/
 	}
+}
 .corpo-caixa_2-titulo{
 	font-family: Semibold;
 	font-weight: 400;
@@ -491,12 +493,12 @@ a:link:focus{
 	color: #F26522;	
 	line-height: 3em;
 }
-	@media(max-width: 768px){
-		.corpo-caixa_2-titulo{
-			width: 51vw;
-    		line-height: 2em;
-		}
+@media(max-width: 768px){
+	.corpo-caixa_2-titulo{
+		width: 51vw;
+		line-height: 2em;
 	}
+}
 .corpo-caixa_2-subtitulo{
 	margin: 0;
 	font-family: Semibold;
@@ -504,9 +506,39 @@ a:link:focus{
 	font-size: 1em;
 	line-height: 2em;
 }
+@media(max-width: 768px){
+	.corpo-caixa_2-subtitulo{
+		line-height: 4em;
+	}
+}
+@media(max-width: 768px){
+	.corpo-caixa_box{
+		/*background-color: red;*/
+		width: 100%;
+		height: auto;
+		display: flex;
+    	flex-direction: column;
+
+	}
+}
 .corpo-Foto-Sobre-03{
 	width: 66vw;
 	padding: 15% 0 0 0;
+}
+@media(max-width: 768px){
+	.corpo-Foto-Sobre-03{
+		width: 90%;
+		margin: 0 0 0 10%;
+	}
+}
+@media(max-width: 768px){
+	.p_versao-mobile{
+		color:#F26522;
+		text-decoration: underline #F26522 !important;
+	    padding: 0;
+	    margin: 14% 0 5% 10%;
+	    font-size: 2em;
+	}
 }
 .descricao--plataforma{
 	width: 40vw;
@@ -515,6 +547,12 @@ a:link:focus{
 	font-weight: 400;
 	font-size: 1em;
 	color: #2E3192;
+}
+@media(max-width: 768px){
+	.descricao--plataforma{
+		width: 80vw;
+		height: auto;
+		margin: 0 0 0 5%;
 }
 .corpo-caixa_descricao{
 	width: 12vw;
