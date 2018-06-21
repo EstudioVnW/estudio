@@ -461,7 +461,7 @@ a:link:focus{
 		.corpo-caixa_2-img{
 			margin-top:20%;
 			width: 100vw;
-			/*height: 45vh;*/
+			height: auto;
 		}
 	}
 .corpo-caixa_2-textos{
