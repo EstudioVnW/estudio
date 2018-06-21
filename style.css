@@ -447,7 +447,7 @@ a:link:focus{
 	@media(max-width: 640px){
 		.corpo-caixa_2{
 			width: 100%;
-			height: 130vh;
+			height: auto;
 			padding: 0;
 			flex-direction: column;
 		}
@@ -490,7 +490,8 @@ a:link:focus{
 }
 	@media(max-width: 640px){
 		.corpo-caixa_2-titulo{
-			width: 41vw;
+			width: 51vw;
+    		line-height: 2em;
 		}
 	}
 .corpo-caixa_2-subtitulo{
