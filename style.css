@@ -37,22 +37,16 @@ body{
 	position: fixed;
 	z-index: 2;
 }
-	@media (max-width: 768px){
-		.corpo-barra_lateral{
-			display: none;
-			width: 8%;
-			align-items: center;
-		}
-		.corpo-barra_lateral .drop-item{
+	
+		/*.corpo-barra_lateral .drop-item{
 			width: 8vw;
 			height: 100%;
 			position: fixed;
 			background-color: #2E3192;
-			z-index: 1;
 			align-items: center;
+			z-index: 1;
 			display: block;
-		}
-	}
+		}*/
 .corpo-barra_lateral-p{
 	width: 2.2vw;
 	margin: 0;
@@ -67,21 +61,6 @@ body{
 	@media (max-width: 768px){
 		.corpo-barra_lateral-p{
 			display: none;
-		}
-	}
-.corpo-barra_lateral-p_Mobile{
-	display: none;
-}
-	@media (max-width: 768px){
-		.corpo-barra_lateral-p_Mobile{
-			width: 5vw;
-			font-family: Light;
-			font-size: 0.9em;
-			color: #F7F7F7;
-			line-height: 7vh; 
-			text-align: center;
-			display: block;
-			position: fixed;
 		}
 	}
 .corpo-menu{
@@ -126,18 +105,10 @@ body{
 	background-color: transparent;
 	border: none;
 	font-size: 45px;
-	display: none; 			
-}
-@media (max-width: 768px){
-	.corpo-menu-hamburguer{
-		background-color: transparent;
-		border: none;
-		font-size: 45px;
-		color: #2E3192;
-		display: block;
-		padding: 0;
-		margin-left: 5%;
-	}
+	display: none; 
+	color: #2E3192;
+	padding: 0;
+	margin-left: 5%;			
 }
 .nav-corpo-menu{
 	/*padding: 0 20px;*/
@@ -146,7 +117,27 @@ body{
 	justify-content: center;
 	align-items: flex-start;
 }
-@media(max-width: 768px){
+.corpo-barra_lateral-p_Mobile{
+	display: none;
+	width: 5vw;
+	font-family: Light;
+	font-size: 0.9em;
+	color: #F7F7F7;
+	line-height: 7vh; 
+	text-align: center;
+	position: fixed;
+}
+@media (max-width: 768px){
+	.corpo-menu-hamburguer{
+		display: block;
+	}
+	.corpo-menu-hamburguer:focus{
+		outline: none;
+	}
+	.corpo-menu-hamburguer:focus ~ .nav-corpo-menu,
+	.nav-corpo-menu:hover{
+		display: flex;
+	}
 	.nav-corpo-menu{
 		width: 70%;
 		height: 100vh;
@@ -160,11 +151,17 @@ body{
 		align-items: flex-start;
 		display: none;
 	}
-
-	.nav-corpo-menu .drop-menu{
-		display: flex;
+	.corpo-barra_lateral{
+		display: none;
+		width: 8%;
+		align-items: center;
 	}
+
+	/*.nav-corpo-menu .drop-menu{
+		display: flex;
+	}*/
 }
+
 @media(max-width: 768px){
 	.nav-corpo-menu-item{
 		color: #F7F7F7;
@@ -855,6 +852,12 @@ img{
 	min-height: 80.4vh;
 	margin: 0 -16.3vw;
 	background-color: #00012E;
+}
+@media(max-width: 768px){
+	.corpo-caixa_8{
+		width: 116vw;
+		height: auto;
+	}
 }
 .p_versao_mobileContato{
 	display: none;
