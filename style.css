@@ -905,9 +905,12 @@ img{
 }
 .corpo-caixa_8{
 	min-width: 96.3vw;
-	min-height: 80.4vh;
+	min-height: 36vh;
 	margin: 0 -16.3vw;
 	background-color: #00012E;
+	white-space: nowrap;
+	/*bottom: 0;
+        position: fixed;*/
 }
 @media(max-width: 768px){
 	.corpo-caixa_8{
@@ -929,12 +932,12 @@ img{
 	}
 }
 .corpo-caixa_8-p{
-	width: 80%;
-	padding: 3% 0 0 20%;
-	line-height: 2.5em;
+	width: 100%;
+	padding: 0.8% 0 0 20%;
+	line-height: 2em;
 	font-family: Medium;
 	font-weight: 400;
-	font-size: 0.9em;
+	font-size: 0.9vw;
 	color: #FCAF17;
 }
 .corpo-caixa_8-p2{
@@ -943,7 +946,7 @@ img{
 	line-height: 2em;
 	font-family: Medium;
 	font-weight: 400;
-	font-size: 0.9em;
+	font-size: 1vw;
 	color: #FCAF17;
 }
 @media (max-width: 768px){
@@ -956,6 +959,7 @@ img{
 	line-height: 2em;
 	display: flex;
 	align-items: center;
+	font-size: 0.9vw;
 }
 @media (max-width: 768px){
 	.corpo-caixa_8-p2-parcerias{
@@ -999,7 +1003,7 @@ img{
 		width: 65vw;
 	}
 }
-.corpo-caixa_8-p2-parcerias-3{
+/*.corpo-caixa_8-p2-parcerias-3{
 	width: 20%;
     margin: 0 0 0 10%;
 	display: flex;
@@ -1009,23 +1013,27 @@ img{
 	.corpo-caixa_8-p2-parcerias-3{
 		margin: 70% 62% 0 0;
 	}
-}
+}*/
 .corpo-caixa_8-pWhite{
 	color: #F5F5F5;
 	text-decoration: underline #fff !important;
+	font-size: 0.9vw;
 }
-.orpo-caixa_8-p-enviar{
+/*.orpo-caixa_8-p-enviar{
 	text-decoration: underline #FCAF17 !important;	
 	margin-top:6vh;
 }
 .corpo-caixa_8-pbranco{
 	color: #F5F5F5;
-}
+}*/
 .corpo-caixa_8-pOrange{
-	margin-top: 6vh;
 	line-height: 2em;
 	font-family: Medium;
 	font-weight:bold;
+	color: #F26522;
+	font-size: 0.9vw;
+}
+.corpo-caixa_8-pOrange a{
 	color: #F26522;
 }
 @media(max-width: 768px){
