@@ -331,7 +331,7 @@ a:link:focus{
 }
 .corpo-caixa_1{
 	width: 76.8vw;
-	height: 98vh;
+	min-height: 80vh;
 	padding: 5% 0% 0 4% ; 
 	align-items: left;
 	line-height: 1.3em;
@@ -340,10 +340,10 @@ a:link:focus{
 }
 @media(max-width: 768px){
 	.corpo-caixa_1{
-		padding: 0;
-		margin-top: 8vh;
 		width: 100%;
 		height: auto;
+		padding: 0;
+		margin-top: 8vh;
 		flex-direction: column;
 	}
 }
@@ -433,7 +433,7 @@ a:link:focus{
 .corpo-caixa_2{
 	width: 80vw;
 	height: 80vh;
-	padding: 25% 0 0 0;
+	padding: 10% 0 0 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -475,7 +475,7 @@ a:link:focus{
 	margin: 0 auto;
 	font-family: SemiboldRegular;
 	font-weight: 400;
-	font-size: 1em;
+	font-size: 1.3vw;
 	color: #2E3192;
 	text-align: left;
 	display: flex;
@@ -491,7 +491,7 @@ a:link:focus{
 .corpo-caixa_2-titulo{
 	font-family: Semibold;
 	font-weight: 400;
-	font-size: 1.8vw;
+	font-size: 1.5vw;
 	color: #F26522;	
 	line-height: 3em;
 }
@@ -506,7 +506,7 @@ a:link:focus{
 	margin: 0;
 	font-family: Semibold;
 	font-weight: bold;
-	font-size: 1.7vw;
+	font-size: 1.3vw;
 	line-height: 2em;
 }
 @media(max-width: 768px){
@@ -907,7 +907,7 @@ img{
 	}
 }
 .corpo-caixa_8{
-	min-width: 96.3vw;
+	width: 96.3vw;
 	min-height: 36vh;
 	margin: 0 -16.3vw;
 	background-color: #00012E;
@@ -1022,6 +1022,10 @@ img{
     flex-direction: column;
     align-items: center;
 }*/
+.contact-form{
+	width: 100%;
+	height: auto;
+}
 .contact-inputTexto{
 	width: 50.1%;
 	display: flex;
