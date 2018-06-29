@@ -908,16 +908,15 @@ img{
 }
 .corpo-caixa_8{
 	width: 96.3vw;
-	min-height: 36vh;
+	height: auto;
 	margin: 0 -16.3vw;
-	background-color: #00012E;
 	white-space: nowrap;
 	/*bottom: 0;
         position: fixed;*/
 }
 @media(max-width: 768px){
 	.corpo-caixa_8{
-		width: 116vw;
+		width: 115vw;
 		height: auto;
 	}
 }
@@ -934,23 +933,33 @@ img{
 		display: block;
 	}
 }
-.corpo-caixa_8-p{
-	width: 100%;
-	padding: 0.8% 0 0 20%;
-	line-height: 2em;
+.corpo-caixa_8-contact{
+	width: 96;
+	min-height: 40vh;
+	padding: 0 0 15% 15%;
 	font-family: Medium;
 	font-weight: 400;
-	font-size: 0.9vw;
+	font-size: 1.2vw;
 	color: #FCAF17;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact_titulo{
+	padding: 0 0 2% 0;
 }
 .corpo-caixa_8-p2{
-	width: 80%;
-	padding:0 0 0 20%;
+	width: 99.9%;
+	padding: 1% 0 1.2% 20%;
 	line-height: 2em;
 	font-family: Medium;
 	font-weight: 400;
 	font-size: 1vw;
 	color: #FCAF17;
+	background-color: #00012E;
+	bottom: 0;
+        position: fixed;
 }
 @media (max-width: 768px){
 	.corpo-caixa_8-p2{
@@ -1023,20 +1032,31 @@ img{
     align-items: center;
 }*/
 .contact-form{
-	width: 100%;
-	height: auto;
+	/*width: 100%;
+	height: auto;*/
+	display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.contact-inputTexto{
+/*.contact-inputTexto{
 	width: 50.1%;
 	display: flex;
 	align-self: flex-end;
 	margin-top: 1%;
+}*/
+.contact-input{
+	width: 50vw;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 8px 0;
 }
 .submit{
-	width: 10%;
-    margin: 1% 0 0 20%;
-    display: flex;
-    justify-content: center;
+	min-width: 5%;
+	height: auto;
+    margin: 1% 0;
+    padding: 12px 24px;
+    background: #fff;
+    color: #FCAF17;
 }
 .corpo-caixa_8-pWhite{
 	color: #F5F5F5;
