@@ -347,28 +347,27 @@ a:link:focus{
 		flex-direction: column;
 	}
 }
+/*.animacao-img:hover{
+	overflow: hidden;
+
+}*/
 .corpo-caixa_1-img{
 	width: 105%;
 	display: flex;
+	border:0;
 	align-items: center;
 	justify-content: flex-start;
-	-webkit-transition: 0.30s ease-in;
-	-moz-transition: 0.30s ease-in;
-	-o-transition: 0.30s ease-in;
-	transition: 0.30s ease-in;
-}
-.corpo-caixa_1-img:hover{
-	width: 100%;
-
+    /*transition: transform .5s;
+    box-sizing: border-box;*/
 }
 
 @media(max-width: 768px){
 	.corpo-caixa_1-img{
 		width:  100%;
 	}
-	.corpo-caixa_1-img:hover{
+	/*.corpo-caixa_1-img:hover{
 		width: 90%;
-	}
+	}*/
 }
 .corpo-caixa_1-sobre_mobile{
 	display: none;
@@ -450,25 +449,25 @@ a:link:focus{
 	width: 30vw;
 	height: 40vh;
 	margin-left: -16.25vw;
-	-webkit-transition: 0.30s ease-in;
+	/*-webkit-transition: 0.30s ease-in;
 	-moz-transition: 0.30s ease-in;
 	-o-transition: 0.30s ease-in;
-	transition: 0.30s ease-in;
+	transition: 0.30s ease-in;*/
 }
-.corpo-caixa_2-img:hover{
+/*.corpo-caixa_2-img:hover{
 	width: 25vw;
 	height: 35vh;
-}
+}*/
 @media(max-width: 768px){
 	.corpo-caixa_2-img{
 		margin-top:20%;
 		width: 100%;
 		height: auto;
 	}
-	.corpo-caixa_2-img:hover{
+	/*.corpo-caixa_2-img:hover{
 		width: 90%;
 
-	}
+	}*/
 }
 .corpo-caixa_2-textos{
 	width: 50%;
@@ -526,22 +525,22 @@ a:link:focus{
 .corpo-Foto-Sobre-03{
 	width: 105%;
 	padding: 15% 0 0 0;
-	-webkit-transition: 0.30s ease-in;
+	/*-webkit-transition: 0.30s ease-in;
 	-moz-transition: 0.30s ease-in;
 	-o-transition: 0.30s ease-in;
-	transition: 0.30s ease-in;
+	transition: 0.30s ease-in;*/
 }
-.corpo-Foto-Sobre-03:hover{
+/*.corpo-Foto-Sobre-03:hover{
 	width: 100%;
-}
+}*/
 @media(max-width: 768px){
 	.corpo-Foto-Sobre-03{
 		width: 90%;
 		margin: 0 0 0 10%;
 	}
-	.corpo-Foto-Sobre-03:hover{
+	/*.corpo-Foto-Sobre-03:hover{
 		width: 85%;
-	}
+	}*/
 }
 .p_versao_mobile{
 	display: none;
@@ -557,11 +556,11 @@ a:link:focus{
 	}
 }
 .descricao--plataforma{
-	width: 40vw;
+	width: 43.2vw;
 	padding: 5% 0% 0 4%;
 	font-family: SemiboldRegular;
 	font-weight: 400;
-	font-size: 1em;
+	font-size: 1.3vw;
 	color: #2E3192;
 }
 @media(max-width: 768px){
@@ -569,6 +568,7 @@ a:link:focus{
 		width: 80vw;
 		height: auto;
 		margin: 0 0 0 5%;
+		font-size: 4vw;
 	}
 }
 .corpo-caixa_descricao{
@@ -576,13 +576,14 @@ a:link:focus{
 	padding: 0 0 20px 0;
 	font-family: Semibold;
 	font-weight: 400;
-	font-size:1em;
+	font-size:1.09vw;
 	color: #2E3192;
 }
 @media(max-width: 768px){
 	.corpo-caixa_descricao{
 		width: 43%;
 		line-height: 1.5em;
+		font-size: 4vw;
 	}
 }
 .corpo-caixa_3{
@@ -777,7 +778,7 @@ img{
 	.corpo-caixa_6-h{
 		width: 100%;
 		margin-top: 5%;
-		font-size: 1em;
+		font-size: 4vw;
 		font-family: Semibold;
 		color: #2E3192;
 		display: flex;
@@ -888,13 +889,14 @@ img{
 	width: 20vw;
 	font-family: Semibold;
 	font-weight: 400;
-	font-size: 1em;
+	font-size: 1.09vw;
 	color: #2E3192;
 }
 @media (max-width: 768px){
 	.corpo-caixa_7-p{
 		width: 73%;
 		margin: 0 0 0 15%;
+		font-size: 4vw;
 	}
 }
 .corpo-caixa_7-img{
