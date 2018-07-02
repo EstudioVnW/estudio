@@ -347,27 +347,32 @@ a:link:focus{
 		flex-direction: column;
 	}
 }
-/*.animacao-img:hover{
+.animacao-img{
 	overflow: hidden;
-
-}*/
+}
+.animacao-img img{
+	max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.animacao-img:hover img {
+	-moz-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.1);
+}
 .corpo-caixa_1-img{
 	width: 105%;
 	display: flex;
 	border:0;
 	align-items: center;
 	justify-content: flex-start;
-    /*transition: transform .5s;
-    box-sizing: border-box;*/
 }
 
 @media(max-width: 768px){
 	.corpo-caixa_1-img{
 		width:  100%;
 	}
-	/*.corpo-caixa_1-img:hover{
-		width: 90%;
-	}*/
 }
 .corpo-caixa_1-sobre_mobile{
 	display: none;
