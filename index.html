@@ -52,7 +52,9 @@
 				<p class="corpo-caixa_1-p2">Esta é uma oportunidade real para jovens que desenvolvem a autoconfiança, qualificando-se e se preparando para um estágio inicial de suas carreiras. Além de serviços de qualidade e alto nível tecnológico para indivíduos, empresas e instituições sociais.</p>	
 			</div>
 			<div class="corpo-caixa_2">
-				<img class="corpo-caixa_2-img" src="assets/Foto-Sobre-02.jpg">
+				<!-- <div class="animacao-img2"> -->
+					<img class="corpo-caixa_2-img" src="assets/Foto-Sobre-02.jpg">
+				<!-- </div> -->
 				<div class="corpo-caixa_2-textos">
 					<p class="corpo-caixa_2-titulo">Porque escolher o Estúdio Vai a Web</p>
 					<p class="corpo-caixa_2-subtitulo">Qualidade de software</p>
@@ -100,19 +102,27 @@
 					<p class="corpo-caixa_5-linguagens-p">React Native</p>
 				</div>
 			</div>
-			<div class="corpo-caixa_6">
+			<section id="projetos" class="corpo-caixa_6">
 				<p class="p_versao_mobile">Portfolio</p>
 				<p id="portfolio" class="corpo-caixa_6-p">Somos apaixonados por códigos, desafios técnicos e os resultados positivos que ajudamos nossos clientes a alcançar. Veja alguns dos nossos projetos mais recentes.</p>
 				
 				<div class="corpo-caixa_6-projetos">
-					<img class="corpo-caixa_6-img1" src="assets/pc-precisaser.png">
-					<h2 class="corpo-caixa_6-h">Instituto PrecisaSer</h2>
-					<a href="#" class="corpo-caixa_6-seta">
-						<span class="corpo-caixa_6-setaEsquerda" onclick="changeDesk(+1)"> ← </span>
-						<span class="corpo-caixa_6-setaDireita"> → </span>
-					</a>
+					<img class="corpo-caixa_6-img1" src="assets/pc-vainaweb.png">
+					<div class="corpo-caixa_6-seta">
+						<span class="corpo-caixa_6-setaEsquerda" onclick="plusPortifolio(-1)"> ← </span>
+						<h2 class="corpo-caixa_6-mobile">Vai na Web</h2>
+						<span class="corpo-caixa_6-setaDireita" onclick="plusPortifolio(+1)"> → </span>
+					</div>
 				</div>
-			</div>
+				<div class="corpo-caixa_6-projetos">
+					<img class="corpo-caixa_6-img1" src="assets/pc-precisaser.png">
+					<div class="corpo-caixa_6-seta">
+						<span class="corpo-caixa_6-setaEsquerda" onclick="plusPortifolio(-1)"> ← </span>
+						<a href="http://www.precisaser.com.br/" target="_blank"><h2 class="corpo-caixa_6-mobile_Instituto">Instituto PrecisaSer</h2></a>
+						<span class="corpo-caixa_6-setaDireita" onclick="plusPortifolio(+1)"> → </span>
+					</div>
+				</div>
+			</section>
 			<div class="corpo-caixa_7">
 				<div class="corpo-caixa_7-box">
 					<p class="corpo-caixa_7-p">A cada serviço contratado do Estúdio Vai na Web você investe na fomação de qualidade de novos desenvolvedores de software.</p>
@@ -163,5 +173,29 @@
 		</div>
 	</main>
 	<script type="text/javascript" src="assets/js/smooth-scroll.js"></script>
-    <!-- <script type="text/javascript" src="main.js"></script> -->
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript">
+    	function startSlideShow()
+		{
+		   if (document.getElementById('destaque') && imageCount > 0)
+		   {
+		      document.getElementById('destaque').style.backgroundImage = "url("+images[currentImage]+")";
+		      document.getElementById('destaque').style.justifyContent = "flex-end";
+		      document.getElementById('titulo1').style.display = "block";
+		      document.getElementById('titulo2').style.display = "none";
+		 
+		      currentImage = currentImage + 1;
+		      if (currentImage > (imageCount-1))
+		      { 
+		         currentImage = 0;
+		         document.getElementById('destaque').style.justifyContent = "flex-start";
+		         document.getElementById('titulo1').style.display = "none";
+		         document.getElementById('titulo2').style.display = "block";
+		      }
+		      setTimeout('startSlideShow()', 5000);
+		   }
+		}
+		startSlideShow();
+    </script>
+
 </body>

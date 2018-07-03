@@ -1,22 +1,17 @@
-(function() {
+var slidesPortifolio = 1;
+showPortifolio(slidesPortifolio);
 
-  var menuBox = document.querySelectorAll('.nav-corpo-menu');
-  var mobileBar = document.querySelector('.corpo-barra_lateral');
+function plusPortifolio(n){
+  showPortifolio(slidesPortifolio += n);
+}
 
-  document.getElementById("menu-hamburguer").addEventListener("click", myFunction);
-  document.getElementById("item-menu").addEventListener("click", myFunction2);  
-
-  function myFunction() {
-    document.getElementById('menu').style.display = "flex";
-    document.getElementById('barra-numerica').style.display = "flex";
-  };
-   function myFunction2() {
-    document.getElementById('menu').style.display = "none";
-    document.getElementById('barra-numerica').style.display = "none";
-  };
-
-  // function myFunction2() {
-  //   menuBox.classList.toggle('drop-menu')
-  //   mobileBar.classList.remove('drop-item')
-  // }
-})();
+function showPortifolio(n){
+  var i;
+  var x = document.getElementsByClassName("corpo-caixa_6-projetos");
+  if (n > x.length) {slidesPortifolio = 1}
+  if (n < 1 ) {slidesPortifolio = x.length};
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slidesPortifolio-1].style.display = "flex"
+};

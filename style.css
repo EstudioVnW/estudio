@@ -89,7 +89,7 @@ body{
 			justify-content: flex-end;
 			align-items: center;
 			background-color: #F5F5F5;
-			z-index: 0;
+			z-index: 1;
 		}
 	}
 .corpo-menu-logo{
@@ -367,6 +367,7 @@ a:link:focus{
 	border:0;
 	align-items: center;
 	justify-content: flex-start;
+
 }
 
 @media(max-width: 768px){
@@ -442,6 +443,20 @@ a:link:focus{
 	justify-content: center;
 	align-items: center;
 }
+/*.corpo-caixa_2{
+	overflow: hidden;
+}
+.corpo-caixa_2 img{
+	max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.corpo-caixa_2:hover img {
+	-moz-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.1);
+}*/
 @media(max-width: 768px){
 	.corpo-caixa_2{
 		width: 100%;
@@ -519,6 +534,20 @@ a:link:focus{
 		font-size: 4.3vw;
 	}
 }
+.corpo-caixa_box{
+	overflow: hidden;
+}
+.corpo-caixa_box img{
+	max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.corpo-caixa_box:hover img {
+	-moz-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.1);
+}
 @media(max-width: 768px){
 	.corpo-caixa_box{
 		width: 100%;
@@ -542,6 +571,7 @@ a:link:focus{
 	.corpo-Foto-Sobre-03{
 		width: 90%;
 		margin: 0 0 0 10%;
+		z-index: 0;
 	}
 	/*.corpo-Foto-Sobre-03:hover{
 		width: 85%;
@@ -630,6 +660,9 @@ a:link:focus{
 }
 img{
 	width: 8vw;
+}
+.corpo-caixa_3--box2{
+	padding: 5% 0 0 0;
 }
 
 @media (max-width: 768px){
@@ -735,7 +768,7 @@ img{
 @media(max-width: 768px){
 	.corpo-caixa_5-linguagens{
 		width: 80%;
-		min-height: 38vh;
+		min-height: 15vh;
 		margin: 2% 8%;
 		box-shadow: none;
 	}
@@ -776,19 +809,34 @@ img{
 	}
 }
 
-.corpo-caixa_6-h{
+.corpo-caixa_6-mobile{
+	display: none;
+}
+.corpo-caixa_6-mobile_Instituto{
 	display: none;
 }
 @media (max-width: 768px) {
-	.corpo-caixa_6-h{
-		width: 100%;
-		margin-top: 5%;
+	.corpo-caixa_6-mobile{
+		width: 75%;
 		font-size: 4vw;
 		font-family: Semibold;
 		color: #2E3192;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		text-align: center;
+
+	}
+	.corpo-caixa_6-mobile_Instituto{
+		width: 99%;
+		font-size: 4vw;
+		font-family: Semibold;
+		color: #2E3192;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+
 
 	}
 }
@@ -810,14 +858,12 @@ img{
 		align-items: center;
 	}
 }
-.corpo-caixa_6-img1{
-	min-width: 70%;
-	padding: 0 0% 0 3%;
-	transition: transform .5s;
-    box-sizing: border-box;
-}/*
-.corpo-caixa_6-img1:hover{
-	overflow: hidden;*/
+	.corpo-caixa_6-img1{
+		min-width: 80%;
+		padding: 0 0% 0 3%;
+		transition: transform .5s;
+	    box-sizing: border-box;
+	}
 }
 @media(max-width: 768px){
 	.corpo-caixa_6-img1{
@@ -826,17 +872,15 @@ img{
 }
 .corpo-caixa_6-seta{
 	width: 30%;
-	/*box-sizing: border-box;
-	display: flex;
-	justify-content: center;*/
 	align-items: center;
 }
 @media(max-width: 768px){
 	.corpo-caixa_6-seta{
-		width: 20%;
+		width: 80%;
 		display: flex;
 		align-items: center;
-		justify-content: space-around;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 }
 .corpo-caixa_6-setaEsquerda{
@@ -844,17 +888,22 @@ img{
 	font-family: SemiboldRegular;
 	font-size: 2.125em;
 	color: #2E3192;
+	cursor: pointer;
+	border-color: transparent;
+}
+.corpo-caixa_6-setaEsquerda:focus{
+	outline: none;
 }
 @media (max-width: 768px){
 	.corpo-caixa_6-setaEsquerda{
 		font-size: 6vw;
 	}
-
 }
 .corpo-caixa_6-setaDireita{
 	font-family: SemiboldRegular;
 	font-size: 2.125em;
 	color: #2E3192;
+	cursor: pointer;
 }
 @media (max-width: 768px){
 	.corpo-caixa_6-setaDireita{
@@ -885,7 +934,7 @@ img{
 }
 @media(max-width: 768px){
 	.corpo-caixa_7-box{
-		height: 87vh;
+		height: 82vh;
 		display: flex;
 		flex-direction: column;
 	}
@@ -941,7 +990,7 @@ img{
 	}
 }
 .corpo-caixa_8-contact{
-	width: 96;
+	min-width: 96vw;
 	min-height: 40vh;
 	padding: 0 0 15% 15%;
 	font-family: Medium;
@@ -956,6 +1005,15 @@ img{
 .contact_titulo{
 	padding: 0 0 2% 0;
 }
+@media(max-width: 768px){
+	.contact_titulo{
+	    width: 100%;
+		padding: 5% 5% 10%;
+	    font-size: 5vw;
+	    white-space: normal;
+	}
+
+}
 .corpo-caixa_8-p2{
 	width: 99.9%;
 	padding: 1% 0 1.2% 20%;
@@ -966,11 +1024,14 @@ img{
 	color: #FCAF17;
 	background-color: #00012E;
 	bottom: 0;
-        position: fixed;
+    position: fixed;
 }
 @media (max-width: 768px){
 	.corpo-caixa_8-p2{
 		padding: 0 0 0 18%;
+		width: 116vw;
+	    height: 90vw;
+	    position: relative;
 	}
 }
 .corpo-caixa_8-p2-parcerias{
@@ -986,6 +1047,7 @@ img{
 		flex-direction: column;
 		white-space: nowrap;
 		width: 30%;
+		font-size: 4vw;
 	}
 }
 .corpo-caixa_8-p2-parcerias-1{
@@ -1002,7 +1064,7 @@ img{
 .corpo-caixa_8-p2-parcerias-2{
 	width: 20vw;
 	height: 10vh;
-	margin: 0 0 0 5%;
+	padding: 0.9% 0 0 0;
 	line-height: 2em;
 	display: flex;
 	flex-direction: column;
@@ -1022,40 +1084,21 @@ img{
 		width: 65vw;
 	}
 }
-/*.corpo-caixa_8-p2-parcerias-3{
-	width: 20%;
-    margin: 0 0 0 10%;
-	display: flex;
-	flex-direction: column;
-}
-@media (max-width: 768px){
-	.corpo-caixa_8-p2-parcerias-3{
-		margin: 70% 62% 0 0;
-	}
-}*/
-/*.contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}*/
 .contact-form{
-	/*width: 100%;
-	height: auto;*/
 	display: flex;
     flex-direction: column;
     align-items: center;
 }
-/*.contact-inputTexto{
-	width: 50.1%;
-	display: flex;
-	align-self: flex-end;
-	margin-top: 1%;
-}*/
 .contact-input{
 	width: 50vw;
     padding: 5px;
     box-sizing: border-box;
     margin: 8px 0;
+}
+@media(max-width: 768px){
+	.contact-input{
+		width:90vw; 
+	}
 }
 .submit{
 	min-width: 5%;
@@ -1065,18 +1108,21 @@ img{
     background: #fff;
     color: #FCAF17;
 }
+@media(max-width: 768px){
+	.submit{
+		width: 35vw; 
+	}
+}
 .corpo-caixa_8-pWhite{
 	color: #F5F5F5;
 	text-decoration: underline #fff !important;
 	font-size: 0.9vw;
 }
-/*.orpo-caixa_8-p-enviar{
-	text-decoration: underline #FCAF17 !important;	
-	margin-top:6vh;
+@media(max-width: 768px){
+	.corpo-caixa_8-pWhite{
+		font-size: 4vw;
+	}
 }
-.corpo-caixa_8-pbranco{
-	color: #F5F5F5;
-}*/
 .corpo-caixa_8-pOrange{
 	line-height: 2em;
 	font-family: Medium;
@@ -1090,7 +1136,8 @@ img{
 @media(max-width: 768px){
 	.corpo-caixa_8-pOrange{
 		min-width: 86vw;
-		margin: 25% 0;
-    	line-height: 2.5em;
+		line-height: 1.9em;
+    	font-size: 3.5vw;
+    	margin: 19% 0 0 0;
 	}
 }
