@@ -814,6 +814,7 @@ img{
 }
 .corpo-caixa_6-mobile_Instituto{
 	display: none;
+	width: 94%;
 }
 @media (max-width: 768px) {
 	.corpo-caixa_6-mobile{
@@ -897,7 +898,7 @@ img{
 @media (max-width: 768px){
 	.corpo-caixa_6-setaEsquerda{
 		font-size: 6vw;
-	}
+    }
 }
 .corpo-caixa_6-setaDireita{
 	font-family: SemiboldRegular;
@@ -908,7 +909,7 @@ img{
 @media (max-width: 768px){
 	.corpo-caixa_6-setaDireita{
 		font-size: 6vw;
-	}
+    }
 }
 .corpo-caixa_7{
 	min-width: 96.3vw;
@@ -1024,7 +1025,8 @@ img{
 	color: #FCAF17;
 	background-color: #00012E;
 	bottom: 0;
-    position: fixed;
+    /*position: fixed;*/
+    z-index: -1;
 }
 @media (max-width: 768px){
 	.corpo-caixa_8-p2{
