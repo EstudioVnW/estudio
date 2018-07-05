@@ -475,7 +475,6 @@ a:link:focus{
 	width: 30vw;
 	height: 40vh;
 	margin-left: -16.25vw;
-	z-index: 0;
 	/*-webkit-transition: 0.30s ease-in;
 	-moz-transition: 0.30s ease-in;
 	-o-transition: 0.30s ease-in;
