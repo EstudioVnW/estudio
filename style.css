@@ -11,6 +11,7 @@ body{
 	/*min-height: 22vh;*/
 	margin: 0;
 	display: flex;
+	background-color: #f5f5f5;
 }
 .corpo{
 	width: 100%;
@@ -26,7 +27,7 @@ body{
 		.corpo{
 			width: 100vw;
 			min-height: 100vh;
-			margin-bottom: 45vh;
+			margin-bottom: 48vh;
 			flex-direction: column;
 			border:none;
 		}
@@ -1035,9 +1036,9 @@ img{
 }
 @media (max-width: 768px){
 	.corpo-caixa_8-p2{
-		padding: 0 0 0 10%;
-		width: 116vw;
-	    height: 90vw;
+		padding: 20px 5%;
+		width: 100%;
+	    min-height: 30vh;
 	    position: fixed;
 	}
 }
@@ -1053,7 +1054,7 @@ img{
 		display: flex;
 		flex-direction: column;
 		white-space: nowrap;
-		width: 30%;
+		width: 100%;
 		font-size: 4vw;
 	}
 }
@@ -1065,7 +1066,8 @@ img{
 }
 @media (max-width:768px){
 	.corpo-caixa_8-p2-parcerias-1{
-		padding: 30% 0 0 0;
+		/*padding: 30% 0 0 0;*/
+		width: 100%;
 	}
 }
 .corpo-caixa_8-p2-parcerias-2{
@@ -1078,7 +1080,9 @@ img{
 }
 @media (max-width:768px){
 	.corpo-caixa_8-p2-parcerias-2{
-		padding: 30% 0 0 0;
+		/*padding: 30% 0 0 0;*/
+		width: 100%;
+
 	}
 }
 .corpo-caixa_8-p2-parcerias-2-span{
@@ -1088,7 +1092,7 @@ img{
 }
 @media(max-width: 768px){
 	.corpo-caixa_8-p2-parcerias-2-span{
-		width: 65vw;
+		width: 60%;
 	}
 }
 .contact-form{
@@ -1142,9 +1146,10 @@ img{
 }
 @media(max-width: 768px){
 	.corpo-caixa_8-pOrange{
-		min-width: 86vw;
+		width: 80%;
 		line-height: 1.9em;
-    	font-size: 3.5vw;
-    	margin: 19% 0 0 0;
+    	font-size: 16px;
+    	margin-top: 20px;
+    	/*margin: 19% 0 0 0;*/
 	}
 }
