@@ -26,6 +26,7 @@ body{
 		.corpo{
 			width: 100vw;
 			min-height: 100vh;
+			margin-bottom: 45vh;
 			flex-direction: column;
 			border:none;
 		}
@@ -50,7 +51,7 @@ body{
 			display: block;
 		}*/
 .corpo-barra_lateral-p{
-	width: 2.2vw;
+	width: 30px;
 	margin: 0;
 	min-height: 3vh;
 	font-family: Light;
@@ -1034,10 +1035,10 @@ img{
 }
 @media (max-width: 768px){
 	.corpo-caixa_8-p2{
-		padding: 0 0 0 18%;
+		padding: 0 0 0 10%;
 		width: 116vw;
 	    height: 90vw;
-	    position: relative;
+	    position: fixed;
 	}
 }
 .corpo-caixa_8-p2-parcerias{
