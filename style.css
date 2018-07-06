@@ -8,7 +8,7 @@
 
 body{
 	width: 100%;
-	/*min-height: 22vh;*/
+	min-height: 96vh;
 	margin: 0;
 	display: flex;
 	background-color: #f5f5f5;
@@ -174,7 +174,7 @@ body{
 .corpo-body{
 	width: 70%;
 	/*height: 100%;*/
-	margin-bottom: 22vh;
+	margin-bottom: -90vh;
 	background-color: #F5F5F5;
 }
 .corpo-caixa_Mãe{
@@ -473,7 +473,7 @@ a:link:focus{
 .corpo-caixa_1{
 	width: 76.8vw;
 	min-height: 80vh;
-	padding: 5% 0% 0 4% ; 
+	padding: 0 0 0 4% ; 
 	align-items: left;
 	line-height: 1.3em;
 	display: flex;
@@ -539,7 +539,7 @@ a:link:focus{
 	padding: 25px 0 25px 0;
 	font-family: SemiboldRegular;
 	font-weight: 400;
-	font-size: 1.3vw;
+	font-size: 1.5vw;
 	color: #2E3192;
 	text-align: left;
 	line-height: 1.3em;
@@ -565,7 +565,7 @@ a:link:focus{
 	width: 42vw;
 	text-align: left;
 	font-family: SemiboldRegular;
-	font-size: 1.3vw;
+	font-size: 1.5vw;
 	color: #2E3192;
 	line-height: 1.3em;
 }
@@ -632,9 +632,13 @@ a:link:focus{
 @media(max-width: 768px){
 	.corpo-caixa_2-titulo{
 		width: 51vw;
-		line-height: 2em;
+		margin-top: 5%;
+		line-height: 1.5em;
 		font-size: 5vw;
 	}
+}
+.corpo-caixa_2-boxTextos{
+	margin: 3% 0;
 }
 .corpo-caixa_2-subtitulo{
 	margin: 0;
@@ -670,16 +674,17 @@ a:link:focus{
 	}
 }
 .p_versao_mobile{
-	display: none;
+	font-family: Bold;
+	color:#F26522;
+	text-decoration: underline #F26522 !important;
+	margin: 5% 0 0 4%;
+    font-size: 3vw;
 }
 @media(max-width: 768px){
 	.p_versao_mobile{
-		color:#F26522;
-		text-decoration: underline #F26522 !important;
 	    padding: 0;
 	    margin: 14% 0 5% 10%;
-	    font-size: 10vw;
-	    display: block;
+	    font-size: 8vw;
 	}
 }
 .descricao--plataforma{
@@ -887,7 +892,7 @@ img{
 }
 .corpo-caixa_6-p{
 	width: 45vw;
-	padding: 15% 0 5% 4%;
+	padding: 5% 0 5% 4%;
 	font-family: SemiboldRegular;
 	font-weight: 400;
 	font-size: 1em;
@@ -1056,12 +1061,17 @@ img{
 	}
 }
 .corpo-caixa_8{
-	width: 96.3vw;
-	height: auto;
-	margin: 0 -16.3vw;
+    width: 99.9%;
+/*	width: 96.3vw;*/
+    height: 100vh;
+    margin: 0 -16.3vw;
+	padding: 0 0 1.2% 20%;
+    background-color: #00012E;
 	white-space: nowrap;
-	/*bottom: 0;
-        position: fixed;*/
+	/*position: fixed;*/
+	bottom: 0;
+    z-index: -1;
+    position: fixed;
 }
 @media(max-width: 768px){
 	.corpo-caixa_8{
@@ -1070,22 +1080,24 @@ img{
 	}
 }
 .p_versao_mobileContato{
-	display: none;
+	font-family: Bold;
+	color:#F26522;
+	text-decoration: underline #F26522 !important;
+	margin: 0 0 5% 19%;
+    font-size: 3vw;
 }
 @media(max-width: 768px){
 	.p_versao_mobileContato{
 		padding: 0;
 		margin: 14% 0 5% 20%;
-		color: #F26522;
-		text-decoration: underline #F26522 !important;
-		font-size: 2em;
-		display: block;
+		font-size: 1.5em;
 	}
 }
 .corpo-caixa_8-contact{
 	min-width: 96vw;
 	min-height: 40vh;
-	padding: 0 0 15% 15%;
+	/*padding: 0 0 15% 15%;*/
+	padding: 0 0 5% 15%;
 	font-family: Medium;
 	font-weight: 400;
 	font-size: 1.2vw;
@@ -1094,6 +1106,7 @@ img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /*background-color: red;*/
 }
 .contact_titulo{
 	padding: 0 0 2% 0;
@@ -1109,16 +1122,15 @@ img{
 }
 .corpo-caixa_8-p2{
 	width: 99.9%;
-	padding: 1% 0 1.2% 20%;
+	padding: 0 0 1.2% 20%;
 	line-height: 2em;
 	font-family: Medium;
 	font-weight: 400;
 	font-size: 1vw;
 	color: #FCAF17;
-	background-color: #00012E;
-	bottom: 0;
-    position: fixed;
-    z-index: -1;
+	/*bottom: 0;*/
+    /*position: fixed;
+    z-index: -1;*/
 }
 @media (max-width: 768px){
 	.corpo-caixa_8-p2{
