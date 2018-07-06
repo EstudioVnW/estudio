@@ -1061,9 +1061,9 @@ img{
 	}
 }
 .corpo-caixa_8{
-    width: 99.9%;
+    min-width: 60vw;
 /*	width: 96.3vw;*/
-    height: 100vh;
+    min-height: 80vh;
     margin: 0 -16.3vw;
 	padding: 0 0 1.2% 20%;
     background-color: #00012E;
