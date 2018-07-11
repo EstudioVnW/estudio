@@ -218,7 +218,7 @@ a:link:focus{
 @media(max-width: 768px){
 	.corpo-titulo{
 		width: 90vw;
-		height: 60vh;
+		height: 50vh;
 		font-size: 4vw;
 		margin-left: 7%;
 		line-height: 3em;
@@ -419,6 +419,7 @@ a:link:focus{
 	.corpo-botoes{
 		padding: 0;
 		min-width: 75vw;
+		min-height: 20vh;
 		margin-left: 12%; 
 	}
 }
@@ -512,7 +513,7 @@ a:link:focus{
 	transform: scale(1.1);
 }*/
 .corpo-caixa_1-img{
-	width: 105%;
+	width: 100%;
 	display: flex;
 	border:0;
 	align-items: center;
@@ -965,6 +966,9 @@ img{
 		align-items: center;
 	}
 }
+.link-img{
+	min-width: 80%;
+}
 	.corpo-caixa_6-img1{
 		min-width: 80%;
 		padding: 0 0% 0 3%;
@@ -1027,7 +1031,7 @@ img{
 }
 @media(max-width: 768px){
 	.corpo-caixa_7{
-		height: 67vh;
+		height: 60vh;
 	}
 }
 .corpo-caixa_7-box{
@@ -1072,8 +1076,8 @@ img{
 .corpo-caixa_8{
     min-width: 60vw;
 /*	width: 96.3vw;*/
-    min-height: 80vh;
-    margin: 0 -16.3vw;
+    min-height: 100vh;
+    margin: 0 -34vw;
 	padding: 0 0 1.2% 20%;
     background-color: #00012E;
 	white-space: nowrap;
@@ -1086,6 +1090,7 @@ img{
 	.corpo-caixa_8{
 		min-width: 80vw;
 		height: auto;
+		min-height: 90%;
 		padding: 5% 90% 10% 0;
    		 margin: 0;
 	}
@@ -1094,7 +1099,7 @@ img{
 	font-family: Bold;
 	color:#F26522;
 	text-decoration: underline #F26522 !important;
-	margin: 0 0 5% 19%;
+	margin: 5% 0 5% 19%;
     font-size: 3vw;
     /*margin-top: 5%;*/
 }
@@ -1151,7 +1156,7 @@ img{
 }
 @media (max-width: 768px){
 	.corpo-caixa_8-p2{
-		padding: 20px 5%;
+		padding: 20px 3%;
 		width: 100%;
 	    min-height: 30vh;
 	    position: fixed;
@@ -1264,7 +1269,7 @@ img{
 		width: 80%;
 		line-height: 1.9em;
     	font-size: 16px;
-    	margin-top: 20px;
+    	margin-top: 0;
     	/*margin: 19% 0 0 0;*/
 	}
 }
