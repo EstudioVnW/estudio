@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="description" content="Tecnologia">
-	<meta name="viewport" content="winavh=device-winavh, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="assets/Estudio_VaiNaWeb-Logo.png">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" type="text/css" href="fonts.css">
@@ -15,19 +15,22 @@
 		<p class="corpo-barra_lateral-p">
 			01  02  03  04  05  06  07  08  09  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89  90  91  92  93  94  95  96  97  98  99  100  101  102  103  104  105  106  107  108  109  110  111  112  113  114  115  116  117  118  119  120  121  122  123  124  125  126  127  128  129  130  131  132  133  134  135  136  137  138  139  140  141  142  143  144  145  146  147  148  149  150  151  152  153  154 155 156 157 158 159 160 161 162 163 165 167 168 169 170 171 172 173 174 175 176 177 178 179 180
 		</p>
-		<p class="corpo-barra_lateral-p_Mobile">
-			01  02  03  04  05  06  07  08  09  10  11  12  13  14  15  16  17
-		</p>
 	</div>
 	<aside class="corpo-body">
-		<div class="corpo-menu">
+		<div class="corpo-menu" id="header">
 			<img class="corpo-menu-logo" src="assets/Estudio_VaiNaWeb-Logo.png">
-			<button class="corpo-menu-hamburguer material-icons">menu</button>
+			<button class="corpo-menu-hamburguer material-icons" onclick="showMenu()">menu</button>
 			<nav class="nav-corpo-menu" id="menu"> 
-				<a  class="nav-corpo-menu-item" href="#sobre">Sobre</a> 
-			    <a class="nav-corpo-menu-item" href="#serviços">Serviços</a> 
-			    <a class="nav-corpo-menu-item" href="#portfolio">Portfolio</a>
-			    <a class="nav-corpo-menu-item" href="#contato">Contato</a>  
+				<p class="corpo-barra_lateral-p_Mobile">
+					01  02  03  04  05  06  07  08  09  10  11  12  13  14  15  16  17
+				</p>
+				<a class="nav-corpo-menu-item"
+					id="menu-item"
+					href="#sobre"
+					onclick="showMenu(), scroll('#sobre')">Sobre</a> 
+			    <a class="nav-corpo-menu-item" id="menu-item" href="#serviços" onclick="showMenu(), scroll()">Serviços</a> 
+			    <a class="nav-corpo-menu-item" id="menu-item" href="#portfolio" onclick="showMenu(), scroll()">Portfolio</a>
+			    <a class="nav-corpo-menu-item" id="menu-item" href="#contato" onclick="showMenu(), scroll()">Contato</a>  
 			</nav>
 		</div>
 	</aside>
@@ -96,17 +99,17 @@
 					</div>
 				</div>
 				<div class="corpo-caixa_3">
-					<div class="corpo-caixa_4--box">
+					<div class="corpo-caixa_3--box">
 						<p class="corpo-caixa_descricao">E-mails marketing</p>
-						<img class="corpo-caixa_4-img1" src="assets/Icone-Email.svg">
+						<img class="corpo-caixa_3-img1" src="assets/Icone-Email.svg">
 					</div>
-					<div class="corpo-caixa_4--box2">
+					<div class="corpo-caixa_3--box2">
 						<p class="corpo-caixa_descricao">Aplicativos nativos</p>
 						<img class="corpo-caixa_4-img2" src="assets/Icone-Aplicativos.svg">
 					</div>
 				</div>
 				<div class="corpo-caixa_5">
-					<p class="corpo-caixa_5-p">Linguagens</p>
+					<h3 class="corpo-caixa_5-p">Linguagens</h3>
 					<div class="corpo-caixa_5-linguagens">
 						<p class="corpo-caixa_5-linguagens-p">HTML5</p>
 						<p class="corpo-caixa_5-linguagens-p">CSS3</p>
@@ -116,6 +119,7 @@
 						<p class="corpo-caixa_5-linguagens-p">React Native</p>
 					</div>
 				</div>
+				<hr class="corpoCaixa__hr">
 			</section>
 			<section id="projetos" class="corpo-caixa_6">
 				<h2 id="portfolio" class="corpo__titulo">Portfolio</h2>
@@ -126,11 +130,9 @@
 						<img class="corpo-caixa_6-img1" src="assets/pc-vainaweb.png">
 					</a>
 					<div class="corpo-caixa_6-seta">
-						<span class="corpo-caixa_6-setaEsquerda" onclick="plusPortifolio(-1)"> ← </span>
-						<a href="http://www.vainaweb.com.br/" target="_blank">
-							<h2 class="corpo-caixa_6-mobile">Vai na Web</h2>
-						</a>
-						<span class="corpo-caixa_6-setaDireita" onclick="plusPortifolio(+1)"> → </span>
+						<a class="corpo-caixa_6-mobile" href="http://www.vainaweb.com.br/" target="_blank">Vai na Web</a>
+						<span class="corpo-caixa-seta__icon" onclick="plusPortifolio(-1)"> ← </span>
+						<span class="corpo-caixa-seta__icon" onclick="plusPortifolio(+1)"> → </span>
 					</div>
 				</div>
 				<div class="corpo-caixa_6-projetos">
@@ -138,11 +140,11 @@
 						<img class="corpo-caixa_6-img1" src="assets/pc-precisaser.png">
 					</a>
 					<div class="corpo-caixa_6-seta">
-						<span class="corpo-caixa_6-setaEsquerda" onclick="plusPortifolio(-1)"> ← </span>
-						<a href="http://www.precisaser.com.br/" target="_blank">
-							<h2 class="corpo-caixa_6-mobile_Instituto">Instituto PrecisaSer</h2>
+						<a class="corpo-caixa_6-mobile" href="http://www.precisaser.com.br/" target="_blank">
+							<!-- <h2 class="corpo-caixa_6-mobile_Instituto"> -->Instituto PrecisaSer<!-- </h2> -->
 						</a>
-						<span class="corpo-caixa_6-setaDireita" onclick="plusPortifolio(+1)"> → </span>
+						<span class="corpo-caixa-seta__icon" onclick="plusPortifolio(-1)"> ← </span>
+						<span class="corpo-caixa-seta__icon" onclick="plusPortifolio(+1)"> → </span>
 					</div>
 				</div>
 			</section>
@@ -204,7 +206,7 @@
 			</div>
 		</div>
 	</footer>
-	<script type="text/javascript" src="assets/js/smooth-scroll.js"></script>
+	<!-- <script type="text/javascript" src="assets/js/smooth-scroll.js"></script> -->
     <script type="text/javascript" src="main.js"></script>
     <script type="text/javascript">
     	function startSlideShow()
