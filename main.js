@@ -38,7 +38,7 @@ function showMenu(){
 
 function scroll(){
 	if(window.innerWidth <= '768'){
-		window.addEventListener('load', function(){
+		// window.addEventListener('load', function(){
 		
 			var sizeHeader = document.querySelector('#header').offsetHeight;
 
@@ -73,7 +73,7 @@ function scroll(){
 				var ancoraContato = document.querySelector('#contato');
 				window.scrollTo(0, ancoraContato.offsetTop - sizeHeader);
 			});
-		});	
+		// });	
 	}
 }
 
@@ -81,16 +81,13 @@ scroll();
 
 const barSize = function (){
 	document.getElementById('barra-numerica').style.height = document.body.clientHeight+'px';
-	document.getElementById('barra-numerica').style.display = 'block';
-
-	console.log('style', document.getElementById('barra-numerica').style.height)
 }
 window.addEventListener('load', barSize);
 
 
 
 function resize(){
-	scroll();
 	hiddenMenu();
+	scroll();
 	barSize();
 }

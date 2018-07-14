@@ -26,7 +26,7 @@ body{
 	z-index: 2;
 	top:0;
 	left:0;
-	display: none;
+	/*display: none;*/
 }
 @media(max-width: 768px){
 	.corpo-barra_lateral{
