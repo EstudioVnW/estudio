@@ -1,8 +1,6 @@
 var slidesPortifolio = 1;
 showPortifolio(slidesPortifolio);
 
-let menu = document.getElementById('menu');
-
 function plusPortifolio(n){
   showPortifolio(slidesPortifolio += n);
 };
@@ -18,37 +16,13 @@ function showPortifolio(n){
   x[slidesPortifolio-1].style.display = "flex"
 };
 
-// if(window.innerWidth <= '768'){
-
-	function scroll(value){
-
-		document.querySelectorAll('menu-item').addEventListener(
-			'click', function(event){
-			    event.preventDefault();
-		});
-
-		var id = document.getElementById('menu-item').getAttribute('href'),
-			targetOffset = id.getBoundingClientRect().top,
-			menuHeight = document.getElementById('header').innerHeight();
-
-		document.body.scrollTop = targetOffset + menuHeight;	
-	};
-// };
-
-// $('.scroll').click(function(event){
-//     event.preventDefault();
-//     var id = $(this).attr('href'),
-//         targetOffset = $(id).offset().top,
-//         menuHeight = $('.navbar').innerHeight();
-//     $('html, body').animate({
-//         scrollTop: targetOffset - menuHeight
-//     }, 500);
-// });
-
+var menu = document.getElementById('menu');
 
 const hiddenMenu = function (){
 	if(window.innerWidth <= '768'){
-		menu.style.display = 'none'	
+		menu.style.display = 'none';
+	}else if(window.innerWidth >= '768'){
+		menu.style.display = 'flex';
 	}
 };
 
@@ -62,4 +36,61 @@ function showMenu(){
 	}
 };
 
+function scroll(){
+	if(window.innerWidth <= '768'){
+		window.addEventListener('load', function(){
+		
+			var sizeHeader = document.querySelector('#header').offsetHeight;
 
+			var linkSobre = document.querySelector('#menu-item-sobre');
+			linkSobre.addEventListener('click', function(event){
+				event.preventDefault();
+				showMenu();
+				var ancoraSobre = document.querySelector('#sobre');		
+				window.scrollTo(0, ancoraSobre.offsetTop - sizeHeader);
+			});
+
+			var linkServicos = document.querySelector('#menu-item-servicos');
+			linkServicos.addEventListener('click', function(event){
+				event.preventDefault();
+				showMenu();
+				var ancoraServicos = document.querySelector('#serviços');
+				window.scrollTo(0, ancoraServicos.offsetTop - sizeHeader);
+			});
+
+			var linkPortfolio = document.querySelector('#menu-item-portfolio');
+			linkPortfolio.addEventListener('click', function(event){
+				event.preventDefault();
+				showMenu();
+				var ancoraPortfolio = document.querySelector('#portfolio');
+				window.scrollTo(0, ancoraPortfolio.offsetTop - sizeHeader);
+			});
+
+			var linkContato = document.querySelector('#menu-item-contato');
+			linkContato.addEventListener('click', function(event){
+				event.preventDefault();
+				showMenu();
+				var ancoraContato = document.querySelector('#contato');
+				window.scrollTo(0, ancoraContato.offsetTop - sizeHeader);
+			});
+		});	
+	}
+}
+
+scroll();
+
+const barSize = function (){
+	document.getElementById('barra-numerica').style.height = document.body.clientHeight+'px';
+	document.getElementById('barra-numerica').style.display = 'block';
+
+	console.log('style', document.getElementById('barra-numerica').style.height)
+}
+window.addEventListener('load', barSize);
+
+
+
+function resize(){
+	scroll();
+	hiddenMenu();
+	barSize();
+}
