@@ -36,15 +36,16 @@ body{
 	}
 }
 .corpo-barra_lateral-p{
-	width: 30px;
-	margin: 0;
+	min-width: 32px;
 	min-height: 3vh;
+	padding-right:5px;
+	margin: 0;
 	font-family: Light;
 	font-weight: 400;
 	font-size: 15px;
 	color: #F7F7F7;
 	line-height: 2em; 
-	text-align: center;
+	text-align: right;
 	display: flex;
 	flex-direction: column;
 	align-content: space-around;
@@ -1096,6 +1097,7 @@ img{
 	.corpo-caixa_8-contact{
 		width: 80%;
 		margin: 0;
+		padding-left: 0;
 	}
 }
 .contact_titulo{
@@ -1258,7 +1260,7 @@ img{
 		width: 100%;
     	margin: 0;
 		line-height: 1.9em;
-    	font-size: 18px;
+    	font-size: 14px;
 	}
 	.corpo-caixa_8-pOrange p{
 		width: 100%;
