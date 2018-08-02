@@ -460,7 +460,7 @@ body{
 @media(max-width: 768px){
 	.corpo-caixa_1-p{
 		width: 80%;
-		font-size: 4vw;
+		font-size: 4.3vw;
 	}
 }
 .vnw{
@@ -557,7 +557,7 @@ body{
 		width: 80%;
 		padding-right: 100px;
 		line-height: 1.5em;
-		font-size: 19px;
+		font-size: 4.3vw;
 	}
 }
 .corpo-caixa_2-subtitulo{
@@ -580,7 +580,7 @@ body{
 	.corpo-caixa_2-subtitulo,
 	.corpo-caixa_2-p{
 		width: 80%;
-		font-size: 19px;
+		font-size: 4.3vw;
 	}
 }
 .corpo-caixa_box{
@@ -636,7 +636,7 @@ body{
 @media(max-width: 768px){
 	.descricao--plataforma{
 		width: 80%;
-		font-size: 4vw;
+		font-size: 4.3vw;
 	}
 }
 .corpo-caixa_descricao{
@@ -876,6 +876,7 @@ img{
 	}
 	.corpo-caixa_6-p{
 		width: 80%;
+		font-size: 4.3vw;
 	}
 }
 .corpo-caixa_6-projetos{
